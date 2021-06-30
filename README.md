@@ -16,26 +16,22 @@ datasets corresponding to these examples have been deposited on
 accession number + 's' (e.g., ds003645s for the OpenNeuro dataset ds003645) 
 will be appended to the dataset name for identification.
 
-# Validating examples using the BIDS validator
-
-The next three sections mention a few details on how the `hed-examples` can be validated using `bids-validator`.
+## Validating examples using the BIDS validator
 
 For general information on the `bids-validator`, including installation and usage, see the
 [bids-validator README file](https://github.com/bids-standard/bids-validator#quickstart).
-
-## Validating individual examples
 
 Since all raw data files in this repository are empty,
 the `bids-validator` must to be configured to not report empty data files as errors.
 (See more on bids-validator configuration in the
 [bids-validator README](https://github.com/bids-standard/bids-validator#configuration).)
 
-Just run the validator as follows (using the `eeg_hed_ds003645s` dataset as an example,
-and assuming you are in a command line at the root of the `bids-examples` repository):
+Just run the validator as follows (using the `eeg_ds003645s` dataset as an example,
+and assuming you are in a command line at the root of the `hed-examples` repository):
 
-`bids-validator eeg_ds0003645s --config.ignore=99`
+`bids-validator eeg_ds003645s --config.ignore=99`
 
-The `--config.ignore=99` "flag" tells the bids-validator to ignore empty data files rather than to report the "empty file" error .
+The `--config.ignore=99` "flag" tells the bids-validator to ignore empty data files rather than to report the "empty file" error.
 
 For datasets that contain NIfTI `.nii` files, you also need to add the `ignoreNiftiHeaders` flag
 to the `bids-validator` call, to suppress the issue that NIfTI headers are not found.
