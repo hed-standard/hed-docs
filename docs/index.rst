@@ -15,10 +15,11 @@ A PDF version of this document can be found `here <https://hed-docs.readthedocs.
    :caption: Case study/Tutorials:
 
    01_Overview.md
-   02_Direct_annotation.md
-   03_Event_remapping.md
-   04_Using_definitions.md
-   05_Complex_conditions.md
+   01_Getting_started.md
+   03_Direct_annotation.md
+   04_Event_remapping.md
+   05_Simple_conditions.md
+   06_Complex_conditions.md
 
 
 .. toctree::
